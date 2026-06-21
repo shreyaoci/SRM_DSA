@@ -194,10 +194,10 @@ public:
         if (i == c.size() || target < 0) return;
 
         temp.push_back(c[i]);
-        dfs(c, target - c[i], i);   // reuse same element
+        dfs(c, target - c[i], i);   
         temp.pop_back();
 
-        dfs(c, target, i + 1);      // skip element
+        dfs(c, target, i + 1);      
     }
 
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
